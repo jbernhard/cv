@@ -1,17 +1,20 @@
 \documentclass[letterpaper,10pt]{article}
 
-\usepackage[margin=1.6in]{geometry}
-\usepackage{hyperref}
+\usepackage[margin=1.5in]{geometry}
+
+\usepackage[x11names]{xcolor}
+\usepackage[colorlinks=true,urlcolor=SteelBlue4]{hyperref}
 
 \usepackage{titlesec}
-\titleformat{\section}[hang]{\sc}{}{0pt}{}[\vspace{.8ex}\titlerule]
-\titlespacing{\section}{0pt}{3.5ex}{1.8ex}
+\titleformat{\section}[hang]{\sc\Large}{}{0pt}{}
+\titlespacing{\section}{0pt}{2.5em}{1em}
 \titleformat{\subsection}[runin]{\bf}{}{0pt}{}
 \titlespacing{\subsection}{0pt}{1ex}{0pt}
 
 \usepackage{enumitem}
 \setlist[itemize]{itemsep=0ex,parsep=1ex,topsep=.8ex}
 
+\setlength{\parindent}{0pt}
 
 
 \begin{document}
@@ -20,7 +23,7 @@
 \begin{center}
   \Large
   Curriculum Vitae:  Jonah Emery Bernhard \\[1ex]
-  \normalsize
+  \normalsize\rm
   Department of Physics \\
   Duke University \\
   Durham, NC 27708 \\[.5ex]
@@ -88,15 +91,13 @@
 
 \section{Publications}
 
-\noindent
 J.~E.~Bernhard, P.~W.~Marcy, C.~E.~Coleman-Smith, S.~Huzurbazar, R.~L.~Wolpert, and S.~A.~Bass,
 \emph{Quantifying properties of hot and dense QCD matter through systematic model-to-data comparison},
 \href{http://dx.doi.org/10.1103/PhysRevC.91.054910}{Phys.\ Rev.\ C {\bf 91}, 054910 (2015)},
 \href{http://arxiv.org/abs/1502.00339}{arXiv:1502.00339 [nucl-th]}.
 
-\medskip
+\vspace{1em}
 
-\noindent
 J.~S.~Moreland, J.~E.~Bernhard, and S.~A.~Bass,
 \emph{Alternative ansatz to wounded nucleon and binary collision scaling in high-energy nuclear collisions},
 \href{http://dx.doi.org/10.1103/PhysRevC.92.011901}{Phys.\ Rev.\ C {\bf 92}, 011901 (2015)},
