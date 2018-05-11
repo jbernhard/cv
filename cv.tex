@@ -6,19 +6,23 @@
 
 \usepackage[margin=1.5in]{geometry}
 
-\usepackage[x11names]{xcolor}
-\usepackage[colorlinks=true,urlcolor=SteelBlue4]{hyperref}
+\usepackage{xcolor}
+\definecolor{theblue}{RGB}{22,79,149}
+\usepackage[colorlinks=true,urlcolor=theblue]{hyperref}
 
 \usepackage{titlesec}
 \titleformat{\section}[hang]{\sc\Large}{}{0pt}{}
-\titlespacing{\section}{0pt}{2.5em}{1em}
+\titlespacing{\section}{0pt}{1.75em}{.5em}
 \titleformat{\subsection}[runin]{\bf}{}{0pt}{}
 \titlespacing{\subsection}{0pt}{1ex}{0pt}
 
 \usepackage{enumitem}
-\setlist[itemize]{itemsep=0ex,parsep=1ex,topsep=.8ex}
+\setlist[itemize]{itemsep=.75ex,parsep=0pt,topsep=.75ex,leftmargin=1.25em,label=\raisebox{.35ex}{\color{theblue}\tiny\textbullet}}
+\setlist[enumerate]{itemsep=.25ex,parsep=.5ex,topsep=.75ex,leftmargin=*}
 
 \setlength{\parindent}{0pt}
+
+\newcommand{\entry}[3]{\vspace{.5em plus .1em minus .1em}\textbf{#1}, #2 \hfill #3}
 
 \usepackage[style=phys,eprint=true,url=true]{biblatex}
 \defbibenvironment{bibliography}{\vspace{.5em}\begin{enumerate}[itemsep=.8ex]}{\end{enumerate}}{\item}
@@ -43,56 +47,48 @@
 
 \section{Education}
 
-
-\subsection{Duke University}, Durham, North Carolina. \hfill August 2011--March 2018
+\entry{Duke University}{Durham, North Carolina}{August 2011--March 2018}
 
 \begin{itemize}
-  \item Ph.D. Physics, 2018.
+  \item Ph.D. Physics, 2018
   \item Dissertation: \emph{Bayesian parameter estimation for relativistic heavy-ion collisions}
 \end{itemize}
 
-
-\subsection{Swarthmore College}, Swarthmore, Pennsylvania. \hfill September 2007--May 2011
+\entry{Swarthmore College}{Swarthmore, Pennsylvania}{September 2007--May 2011}
 
 \begin{itemize}
-  \item B.A.\ Chemical Physics with Highest Honors, 2011.
-  \item Senior thesis:  \emph{Lorentz violation in solar-neutrino oscillations} \\
-          Nominated for APS Apker Award.
+  \item B.A.\ Chemical Physics with Highest Honors, 2011
+  \item Senior thesis: \emph{Lorentz violation in solar-neutrino oscillations} \\
+    Nominated for APS Apker Award
 \end{itemize}
-
 
 
 \section{Research Experience}
 
-
-\subsection{Graduate research assistant}, Duke University. \hfill January 2012--Present
+\entry{Graduate research assistant}{Duke University}{January 2012--Present}
 
 \begin{itemize}
-  \item Simulated event-by-event relativistic heavy-ion collisions on an unprecedented scale.
-  \item Constrained fundamental quark-gluon plasma properties via systematic model-to-data comparison.
-  \item Based preliminary exam on this work.
-  \item Adviser:  Steffen Bass
+  \item Quantitatively estimated fundamental properties of the quark-gluon plasma created in ultra-relativistic heavy-ion collisions by applying Bayesian statistical methodology.
+  \item Developed computational models of heavy-ion collisions;
+    ran large-scale simulations on high-performance computational systems.
+  \item Based Ph.D.\ dissertation on this work.
+  \item Advisor: Steffen A.\ Bass
 \end{itemize}
 
-
-\subsection{Undergraduate research assistant}, Swarthmore College. \hfill January 2010--May 2011
+\entry{Undergraduate research assistant}{Swarthmore College}{January 2010--May 2011}
 
 \begin{itemize}
   \item Modeled and quantified the possible effects of Lorentz violation on solar neutrinos.
   \item Based undergraduate thesis on this work.
-  \item Adviser:  Matthew Mewes
+  \item Advisor: Matthew Mewes
 \end{itemize}
 
-
-
-\subsection{Summer research fellow}, Swarthmore College. \hfill June--August 2009
+\entry{Summer research fellow}{Swarthmore College}{June--August 2009}
 
 \begin{itemize}
   \item Performed experimental studies of the excited states of nitric oxide gas.
-  \item Adviser:  Thomas Stephenson
+  \item Advisor: Thomas Stephenson
 \end{itemize}
-
-
 
 \pagebreak
 
@@ -103,72 +99,81 @@
 
 \section{Presentations}
 
+\begin{enumerate}
+  \item \entry{Quark Matter 2017}{Chicago, Illinois}{February 7, 2017} \par
+    Characterization of the initial state and QGP medium from a \\
+    combined Bayesian analysis of LHC data at 2.76 and 5.02 TeV
 
-\subsection{Quark Matter 2017}, Chicago, Illinois. \hfill February 7, 2017 \\
-\emph{Characterization of the initial state and QGP medium from a \\ combined Bayesian analysis of LHC data at 2.76 and 5.02 TeV}
+  \item \entry{Institute for Nuclear Theory workshop}{University of Washington}{June 15, 2016} \par
+    Precision extraction of QGP properties with quantified uncertainties \\
+    Part II: methodology and results
 
-\subsection{Institute for Nuclear Theory workshop}, University of Washington. \hfill June 15, 2016 \\
-\emph{Precision extraction of QGP properties with quantified uncertainties \\ Part II: methodology and results}
+  \item \entry{Quark Matter 2015}{Kobe, Japan}{September 29, 2015} \par
+    Poster: Bayesian characterization of the \\
+    initial state and QGP medium
 
-\subsection{Quark Matter 2015}, Kobe, Japan. \hfill September 29, 2015 \\
-Poster: \emph{Bayesian characterization of the \\ initial state and QGP medium}
+  \item \entry{Institute for Nuclear Theory workshop}{University of Washington}{July 14, 2015} \par
+    Quantifying properties of hot and dense QCD matter \\
+    through systematic model-to-data comparison
 
-\subsection{Institute for Nuclear Theory workshop}, University of Washington. \hfill July 14, 2015 \\
-\emph{Quantifying properties of hot and dense QCD matter \\ through systematic model-to-data comparison}
+  \item \entry{2015 RHIC \& AGS users' meeting}{Brookhaven National Lab}{June 9, 2015} \par
+    Bayesian methods for constraining initial conditions and viscosity
 
-\subsection{2015 RHIC \& AGS users' meeting}, Brookhaven National Lab. \hfill June 9, 2015 \\
-\emph{Bayesian methods for constraining initial conditions and viscosity}
+  \item \entry{CIPANP 2015}{Vail, Colorado}{May 22, 2015} \par
+    Quantifying properties of hot and dense QCD matter \\
+    through systematic model-to-data comparison
 
-\subsection{CIPANP 2015}, Vail, Colorado. \hfill May 22, 2015 \\
-\emph{Quantifying properties of hot and dense QCD matter \\ through systematic model-to-data comparison}
+  \item \entry{MADAI workshop}{Michigan State University}{July 7, 2014} \par
+    Model-to-data comparison for event-by-event flow distributions: \\
+    progress and pitfalls
 
-\subsection{MADAI workshop}, Michigan State University. \hfill July 7, 2014 \\
-\emph{Model-to-data comparison for event-by-event flow distributions: \\ progress and pitfalls}
+  \item \entry{Quark Matter 2014}{Darmstadt, Germany}{May 20, 2014} \par
+    Poster: QGP parameter extraction via a global \\
+    analysis of event-by-event flow coefficient distributions
 
-\subsection{Quark Matter 2014}, Darmstadt, Germany. \hfill May 20, 2014 \\
-Poster: \emph{QGP parameter extraction via a global \\ analysis of event-by-event flow coefficient distributions}
+  \item \entry{ECT*}{Trento, Italy}{May 13, 2014} \par
+    QGP parameter extraction via a global \\
+    analysis of event-by-event flow coefficient distributions
 
-\subsection{ECT*}, Trento, Italy. \hfill May 13, 2014 \\
-\emph{QGP parameter extraction via a global \\ analysis of event-by-event flow coefficient distributions}
+  \item \entry{JET bulk group meeting}{Duke University}{March 24, 2014} \par
+    QGP parameter extraction via a global analysis of \\
+    event-by-event flow coefficient distributions
 
-\subsection{JET bulk group meeting}, Duke University. \hfill March 24, 2014 \\
-\emph{QGP parameter extraction via a global analysis of \\ event-by-event flow coefficient distributions}
+  \item \entry{DNP fall 2013 meeting}{Newport News, Virginia}{October 26, 2013} \par
+    QGP parameter extraction via a global analysis of \\
+    event-by-event flow coefficient distributions
 
-\subsection{DNP fall 2013 meeting}, Newport News, Virginia. \hfill October 26, 2013 \\
-\emph{QGP parameter extraction via a global analysis of \\ event-by-event flow coefficient distributions}
+  \item \entry{Sampling workshop}{Frankfurt, Germany}{July 20, 2013} \par
+    QGP parameter extraction via a global analysis of \\
+    event-by-event flow coefficient distributions
 
-\subsection{Sampling workshop}, Frankfurt, Germany. \hfill July 20, 2013 \\
-\emph{QGP parameter extraction via a global analysis of \\ event-by-event flow coefficient distributions}
+  \item \entry{Senior honors talk}{Swarthmore College}{April 27, 2011} \par
+    Lorentz violation in solar-neutrino oscillations
 
-\subsection{Senior honors talk}, Swarthmore College. \hfill April 27, 2011 \\
-\emph{Lorentz violation in solar-neutrino oscillations}
-
-\subsection{CPT '10 meeting}, Indiana University. \hfill July 1, 2010 \\
-Poster: \emph{Lorentz violation in solar-neutrino oscillations}
-
+  \item \entry{CPT '10 meeting}{Indiana University}{July 1, 2010} \par
+    Poster: Lorentz violation in solar-neutrino oscillations
+\end{enumerate}
 
 
 \section{Additional Academic Training}
 
-\subsection{JET Summer School 2014}, University of California, Davis. \hfill June 19--21, 2014
+\entry{JET Summer School 2014}{University of California, Davis}{June 19--21, 2014}
 
-\subsection{ECT* Doctoral Training Program}, Trento, Italy. \hfill April 7--May 16, 2014
+\entry{ECT* Doctoral Training Program}{Trento, Italy}{April 7--May 16, 2014}
 
-\subsection{JET Summer School 2013}, Ohio State University. \hfill June 12--14, 2013
-
+\entry{JET Summer School 2013}{Ohio State University}{June 12--14, 2013}
 
 
 \section{Teaching Experience}
 
-\subsection{Recitation instructor}, Duke University. \hfill August 2011--April 2013
+\entry{Recitation instructor}{Duke University}{August 2011--April 2013}
 
 \begin{itemize}
   \item Introductory Mechanics
   \item Introductory Electricity \& Magnetism
 \end{itemize}
 
-
-\subsection{Teaching assistant}, Swarthmore College. \hfill September 2009--April 2011
+\entry{Teaching assistant}{Swarthmore College}{September 2009--April 2011}
 
 \begin{itemize}
   \item Introductory Mechanics
@@ -176,7 +181,5 @@ Poster: \emph{Lorentz violation in solar-neutrino oscillations}
   \item Mathematical Methods of Physics
   \item Organic Chemistry
 \end{itemize}
-
-
 
 \end{document}
